@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  padding-top: 110px; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;      /* Centrar horizontalmente contenido */
+  align-items: center;
+  gap: 40px;                    /* Espacio entre logo y menú */
+  padding: 8px 20px;            /* Poco padding vertical, algo de horizontal */
+  width: 100%;                  /* Que ocupe todo el ancho */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;              /* Fijar en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000;                /* Que esté por encima de todo */
+  height: 50px;                 /* Altura fija delgada */
+  box-sizing: border-box;       /* Para que padding no aumente altura */
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.nav a {
+  margin-left: 20px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;   /* Acerca el contenedor al centro */
+  margin: 0 auto;     /* Centra el contenedor */
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 450px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.btn.secondary {
+  background-color: #555;
+  color: #fff;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 50px;
+}
